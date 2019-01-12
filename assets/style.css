@@ -1,0 +1,53 @@
+body{
+    background-image: url("images/background.jpg");
+}
+
+#container{
+    width: 960px;
+    font-size: 30px;
+}
+.chooseCharacterBox {
+    width: 570px;
+    height: 150px;
+    background-color: red;  
+    margin: 50px 0 0 10px;
+}
+.characters{  
+    width: 130px;
+    height: 100%;
+    /* background-image: url("images/ZamWesell.jpg"); */
+    float: left;
+}
+
+#char1{
+    /* background-image: url("images/ZamWesell.jpg");  */
+    width: 130px;
+    height: 100%;
+    border: 2px solid blue;
+} 
+#char2{
+    width: 130px;
+    height: 100%;
+    border: 2px solid blue;
+}
+#char3{
+    width: 130px;
+    height: 100%;
+    border: 2px solid blue;
+}
+#char4{
+    width: 130px;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+.enemiesBox {
+    width: 700px;
+    height: 200px;
+    background-color: gray;
+}
+.enemies {
+    width: 130px;
+    height: 100%;
+    
+}

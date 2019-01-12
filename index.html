@@ -3,58 +3,61 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>StarWarsRPG</title>
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>StarWarsRPG</title>
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/java.js"></script>
+
 </head>
+
+
 <body>
-<div class="container">
-    <div class="row">
-        <div class="clm-12-sm">
-           <h1>Star Wars!</h1>
-        </div>
-    </div>
-    <div class="row" id="background">
-        <div class="clm-3-sm">
-                <img src="assets/images/ZamWesell.jpg" alt="Zam Wesell">
 
-        </div>
-        <div class="clm-3-sm">
-                <img src="assets/images/starwars.jpg" alt="Zam Wesell">
-            </div>
-            <div class="clm-3-sm">
-                    <img src="assets/images/johnny-wu-hoth-2.jpg" alt="Zam Wesell">
-                </div>
-                <div class="clm-3-sm">
-                        <img src="assets/images/chewbacca.jpg" alt="Zam Wesell">
-                    </div>
-    </div>
-    <div class="row">
-        <div class="clm-12-sm">
-            <p>Your Character</p>
-        </div>
-    </div>
-    <div class="row">
-
-    </div>
-    <div class="row">
-        <p>enemies open to attack</p>
-    </div>
-    <div class="row">
-            <p>fight section</p>
+    <div id="container">
+        <div class="chooseCharacterBox">
             
-    </div>
-    <div class="row">
-            <button type="button" class="btn btn-danger">Attack!</button>
+                <button class= "characters">
+                    <img src= "assets/images/ZamWesell.jpg" id="char1">
+                </button>
+                <button class= "characters" id="char2">
+                        <img src= "assets/images/chewbacca.jpg" id="char2">
+                </button>
+                <button class= "characters" id="char3">
+                        <img src= "assets/images/johnny-wu-at-st-pilot.jpg" id="char3">
+                </button>
+                <button class= "characters" id="char4">
+                        <img src= "assets/images/johnny-wu-hoth-2.jpg" id="char4">
+                </button>
             
+        </div>
+        <p>Your Character</p>
     </div>
-    <div class="row">
-            <p>defender</p>
+    <br>
+    <div class="enemiesBox">
+        <div>
+        </div>
+            <p>Enemies Available to Attack</p>
+            <span class="enemies"></span>
     </div>
 
-</div>
+    <div class="fightBox">
+        <div class="fight">
+        </div>
+        <p>Fight Section</p>
+    </div>
+<button class="attackBtn">Fight!</button>
+    <div class="defenderBox">
+        <div class="defender">
+            <p id="defender">defender</p>
+        </div>
 
+    </div>
 
 </body>
 </html>
