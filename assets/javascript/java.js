@@ -16,17 +16,19 @@ $(document).ready(function(){
         if (char1Count === true) {
             
             char1Count === false;
-
+            console.log(char1Count);
         $('#char2').appendTo('.enemies').css({'height':'150px'});
         $('#char3').appendTo('.enemies').css({'height':'150px'});
         $('#char4').appendTo('.enemies').css({'height':'150px'});
 
         }
+
         else if (char1Count === flase) {
-            $('#char1').appendTo('#defender');
+            $('#char2').appendTo('#defender');
         }
 
     });
+    
     
 // When character 2 is clicked other moves to enemy box
 $("#char2").on("click",function(){
@@ -38,9 +40,9 @@ $("#char2").on("click",function(){
     $('#char3').appendTo('.enemies').css({'height':'150px'});
     $('#char4').appendTo('.enemies').css({'height':'150px'});
 
-    $('#char2').on('click', function(){
-        $('#char2').append('.defender');
-    });
+    // $('#char3').on('click', function(){
+    //     $('#char2').append('.defender');
+    // });
 }   
 else if (char1Count === flase) {
     $('#char2').appendTo('#defender');
@@ -49,7 +51,7 @@ else if (char1Count === flase) {
 
 
 if (char1Count === true) {
-    char1Count = false;
+    char1Count === false;
 
 // When character 3 is clicked other moves to enemy box
 $("#char3").on("click",function(){
@@ -62,7 +64,7 @@ $("#char3").on("click",function(){
 
 }
 else if (char1Count === flase) {
-    $('#char3').appendTo('#defender');
+    $('#char4').appendTo('#defender');
 }
 
 if (char1Count === true) {
@@ -79,7 +81,7 @@ $("#char4").on("click",function(){
 
 }
 else if (char1Count === flase) {
-    $('#char4').appendTo('#defender');
+    $('#char1').appendTo('#defender');
 }
 
 });
